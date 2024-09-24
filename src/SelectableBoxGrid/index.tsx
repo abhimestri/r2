@@ -54,6 +54,7 @@ const SelectableBoxGrid = ({ inputList }: any) => {
     }
     if (!stack?.length && isAllSelected) {
       setIsAllSelected(false);
+      setStack([]);
     }
   }, [isAllSelected, stack]);
 
